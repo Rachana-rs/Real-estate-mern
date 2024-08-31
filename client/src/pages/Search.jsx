@@ -139,7 +139,7 @@ export default function Search() {
               type='text'
               id='searchTerm'
               placeholder='Search...'
-              className='border rounded-lg p-3 w-full bg-cyan-200'
+              className='border rounded-lg p-3 w-full bg-cyan-200 placeholder-black'
               value={sidebardata.searchTerm}
               onChange={handleChange}
             />
@@ -224,7 +224,7 @@ export default function Search() {
               <option value='createdAt_asc'>Oldest</option>
             </select>
           </div>
-          <button className='bg-cyan-200 text-slate-500 p-3 rounded-lg uppercase hover:opacity-95'>
+          <button className='bg-cyan-200 text-slate-800 p-3 rounded-lg uppercase hover:opacity-95'>
             Search
           </button>
         </form>

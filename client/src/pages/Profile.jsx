@@ -195,7 +195,7 @@ export default function Profile() {
           placeholder='username'
           defaultValue={currentUser.username}
           id='username'
-          className='border p-3 bg-cyan-200 rounded-lg'
+          className='border p-3 bg-cyan-200 rounded-lg placeholder-slate-500'
           onChange={handleChange}
         />
         <input
@@ -203,7 +203,7 @@ export default function Profile() {
           placeholder='email'
           id='email'
           defaultValue={currentUser.email}
-          className='border p-3 bg-cyan-200 rounded-lg'
+          className='border p-3 bg-cyan-200 rounded-lg placeholder-slate-500'
           onChange={handleChange}
         />
         <input
@@ -211,7 +211,7 @@ export default function Profile() {
           placeholder='password'
           onChange={handleChange}
           id='password'
-          className='border p-3 bg-cyan-200 rounded-lg'
+          className='border p-3 bg-cyan-200 rounded-lg placeholder-slate-500'
         />
         <button
           disabled={loading}
@@ -251,7 +251,7 @@ export default function Profile() {
 
       {userListings && userListings.length > 0 && (
         <div className='flex flex-col gap-4'>
-          <h1 className='text-center mt-7 text-2xl font-semibold'>
+          <h1 className='text-center mt-7 text-cyan-500 text-2xl font-semibold'>
             Your Listings
           </h1>
           {userListings.map((listing) => (
@@ -267,7 +267,7 @@ export default function Profile() {
                 />
               </Link>
               <Link
-                className='text-slate-700 font-semibold  hover:underline truncate flex-1'
+                className='text-slate-400 font-semibold  hover:underline truncate flex-1'
                 to={`/listing/${listing._id}`}
               >
                 <p>{listing.name}</p>
